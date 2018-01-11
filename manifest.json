@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Webogram Full Width",
+  "description": "This extension resizes telegram web version to use on big screen.",
+  "version": "0.1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Webogram Full Width Chat"
+  },
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["content.js"],
+    "matches": ["https://web.telegram.org/*"]
+  }]
+}
